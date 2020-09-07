@@ -41,8 +41,6 @@ headers = {
 
 data = '{"value1":"'+randomQues+'"}'
 
-# Needed permission to use program@prepr.org, so used my own email address instead
-# Replace the URL with your own to see emails delivered to program@prep.org
 response = requests.post(
-    'https://maker.ifttt.com/trigger/send_email/with/key/cT789ZN_IqL0KD6YLlnwIz', 
+    'https://maker.ifttt.com/trigger/sendgmail/with/key/cT789ZN_IqL0KD6YLlnwIz', 
       headers=headers, data=data)
